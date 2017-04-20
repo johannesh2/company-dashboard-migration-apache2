@@ -29,10 +29,13 @@ public class MyUI extends UI {
 		AppMenuLayout content = new AppMenuLayout();
 		setContent(content);
 		Navigator navigator = new Navigator(this, (ViewDisplay) content);
-		navigator.addView("", ViewWrapper.class);
 		navigator.addView(Views.VIEW_DASHBOARD, ViewWrapper.class);
 		navigator.addView(Views.VIEW_REPORTS, ReportsView.class);
 		setNavigator(navigator);
+
+		if (navigator.getState().isEmpty()) {
+			navigator.navigateTo(Views.VIEW_DASHBOARD);
+		}
     }
 
 	@WebServlet(urlPatterns = { "/ui/*", "/VAADIN/*" }, name = "MyUIServlet", asyncSupported = true)
