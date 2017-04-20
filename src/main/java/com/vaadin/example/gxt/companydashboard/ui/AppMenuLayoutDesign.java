@@ -5,7 +5,7 @@ import com.vaadin.annotations.DesignRoot;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.CssLayout;
 import com.vaadin.ui.HorizontalLayout;
-import com.vaadin.ui.Label;
+import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.declarative.Design;
 
 /** 
@@ -24,9 +24,7 @@ public class AppMenuLayoutDesign extends HorizontalLayout {
 	protected CssLayout menu;
 	protected Button dashboard;
 	protected Button reports;
-	protected Label viewTitle;
-	protected CssLayout content;
-	protected CssLayout contentSection;
+	protected VerticalLayout content;
 
 	public AppMenuLayoutDesign() {
 		Design.read(this);

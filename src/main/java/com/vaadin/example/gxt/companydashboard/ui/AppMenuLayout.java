@@ -15,7 +15,8 @@ public class AppMenuLayout extends AppMenuLayoutDesign implements ViewDisplay {
 
 	@Override
 	public void showView(View view) {
-		contentSection.removeAllComponents();
-		contentSection.addComponent((Component) view);
+		content.removeAllComponents();
+		((Component) view).setSizeFull();
+		content.addComponents((Component) view);
 	}
 }

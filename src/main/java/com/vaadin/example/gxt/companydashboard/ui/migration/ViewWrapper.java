@@ -8,7 +8,6 @@ import com.vaadin.ui.AbstractComponent;
 public class ViewWrapper extends AbstractComponent implements View {
 
 	public ViewWrapper() {
-		setSizeFull();
 	}
 
 	@Override
