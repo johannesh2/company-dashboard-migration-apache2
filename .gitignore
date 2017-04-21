@@ -1,0 +1,6 @@
+target/
+.classpath
+.project
+.settings
+.vaadin-designer2
+src/main/webapp/VAADIN/widgetsets
