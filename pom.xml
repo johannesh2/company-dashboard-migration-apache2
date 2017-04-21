@@ -23,7 +23,6 @@
         <!-- If there are no local customisations, this can also be "fetch" 
             or "cdn" -->
         <vaadin.widgetset.mode>local</vaadin.widgetset.mode>
-        <gxt.version>4.0.0</gxt.version>
         <gwt.version>2.8.0</gwt.version>
     </properties>
 
@@ -31,12 +30,6 @@
         <repository>
             <id>vaadin-addons</id>
             <url>http://maven.vaadin.com/vaadin-addons</url>
-        </repository>
-        <repository>
-            <id>sencha-gxt-repository</id>
-            <name>Sencha GXT Repository</name>
-            <!-- GPL -->
-            <url>https://maven.sencha.com/repo/gxt-gpl-release</url>
         </repository>
     </repositories>
 
@@ -61,31 +54,6 @@
     </dependencyManagement>
 
     <dependencies>
-        <!-- GXT -->
-        <!-- http://docs.sencha.com/gxt/3.x/getting_started/maven/Maven.html -->
-        <dependency>
-            <groupId>com.sencha.gxt</groupId>
-            <artifactId>gxt</artifactId>
-            <version>${gxt.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sencha.gxt</groupId>
-            <artifactId>gxt-chart</artifactId>
-            <version>${gxt.version}</version>
-        </dependency>
-        <!-- Neptune Theme -->
-        <dependency>
-            <groupId>com.sencha.gxt</groupId>
-            <artifactId>gxt-theme-neptune</artifactId>
-            <version>${gxt.version}</version>
-        </dependency>
-        <!-- Triton Theme -->
-        <dependency>
-            <groupId>com.sencha.gxt</groupId>
-            <artifactId>gxt-theme-triton</artifactId>
-            <version>${gxt.version}</version>
-        </dependency>
-
         <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-codeserver</artifactId>
